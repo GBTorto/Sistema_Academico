@@ -35,12 +35,22 @@ public class Main {
                           
                     break;
                 }
-                case 3:
+                case 3:{
+                    int codigo = Integer.parseInt(
+                            JOptionPane.showInputDialog("Código?")
+                    );
+                    
+                    Pessoa p = new Pessoa();
+                    p.setCodigo(codigo);
+                    p.deletar();
                     
                     break;
-                case 4:
-                    
+                }
+                case 4:{
+                    Pessoa p = new Pessoa();
+                    p.listar();
                     break;
+                }
                 case 0:
                     JOptionPane.showMessageDialog(null, "Obrigado, volte sempre!");
                     break;
